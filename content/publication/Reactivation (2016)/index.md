@@ -3,7 +3,7 @@ title = "PET CT identifies reactivation risk in cynomolgus macaques with latent 
 date = 2016-07-05T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = [Philana Ling Lin ,Pauline Maiello,Hannah P. Gideon,M. Teresa Coleman,Anthony M. Cadena,Mark A. Rodgers,Robert Gregg,Melanie O’Malley,Jaime Tomko,Daniel Fillmore,L. James Frye,Tara Rutledge,Robert M. DiFazio,Christopher Janssen,Edwin Klein,Peter L. Andersen,Sarah M. Fortune,JoAnne L. Flynn ]
+authors = ["Philana Ling Lin","Pauline Maiello","Hannah P. Gideon","M. Teresa Coleman","Anthony M. Cadena","Mark A. Rodgers","Robert Gregg","Melanie O’Malley","Jaime Tomko","Daniel Fillmore","L. James Frye","Tara Rutledge","Robert M. DiFazio","Christopher Janssen","Edwin Klein","Peter L. Andersen","Sarah M. Fortune","JoAnne L. Flynn"]
 
 # Publication type.
 # Legend:
