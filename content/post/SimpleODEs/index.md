@@ -18,6 +18,8 @@ image:
   caption: 'Test Sign'
   focal_point: ""
   preview_only: false
+  
+markup: mmark
 
 ---
 
