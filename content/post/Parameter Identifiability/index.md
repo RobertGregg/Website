@@ -1,7 +1,7 @@
 ---
-title: 'Parameter Identifiability'
-subtitle: 'Problems in ODE Modeling'
-summary: Taking a detailed look into why parameter solving is so difficult
+title: 'Problems in ODE Parameter Fitting'
+subtitle: 'Parameter Identifiabilityg'
+summary: Taking a look into why parameter fitting is so difficult
 authors:
 - admin
 tags:
@@ -24,6 +24,8 @@ markup: mmark
 ---
 
 # Parameter Identifiability in ODE Models
+
+Fitting experimental data to an ODE model is a deceptively difficult task, especially in the systems biology context. The process itself boils down to finding parameter values that best explain your data, but this is complicated by both *parameter identifiability* and *data sparsity* (a latter being ubiquitous in systems biology). Here we’ll explore how both phenomena can impact parameter fitting results.
 
 ## Conventional Parameter Optimization
 
