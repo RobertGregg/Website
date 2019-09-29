@@ -81,9 +81,9 @@ Using Julia, we can code the ODE model we can run an optimization routine to sol
 #Using the fact that m(t) = exp(-τ*t)
     f = function(G,p,t)
         #Assign parameter values
-        kTL, β, τ, m0 = p
+        k, β, τ, m0 = p
         #Write the differential equation
-        return kTL*m0*exp(-τ*t) - β*G
+        return k*m0*exp(-τ*t) - β*G
     end
 
 #Parameter values, Initial Conditions, Time (start, end)
