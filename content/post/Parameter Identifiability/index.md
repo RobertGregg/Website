@@ -1,4 +1,3 @@
-```
 ---
 title: 'Parameter Identifiability'
 subtitle: 'Problems in ODE Modeling'
@@ -23,7 +22,6 @@ image:
 markup: mmark
 
 ---
-```
 
 # Parameter Identifiability in ODE Models
 
