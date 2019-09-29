@@ -35,7 +35,7 @@ To illustrate a typical procedure for finding parameters to an ODE model, consid
 
  We can use this system to determine how often GFP mRNA is read by measuring the light intensity given off by the cell. Here is some simulated data showing the dynamics of the GFP (arbitrary units):
 
-![Figure_GFP_data](.\Figure_GFP_data.svg)
+![svg](Figure_GFP_data.svg)
 
 
 
@@ -122,7 +122,7 @@ Using Julia, we can code the ODE model we can run an optimization routine to sol
 	plot!(sol,labels=:Optimized,linestyle = :dash)
 ```
 
-![Figure_GFP_fit](.\Figure_GFP_fit.svg)
+![svg](Figure_GFP_fit.svg)
 
 Because the noise added to the data was small, the optimizer was able to get within near perfect agreement of the true solution. How do the optimized parameterized values compare to the true values?
 
