@@ -25,13 +25,13 @@ markup: mmark
 
 # Parameter Identifiability in ODE Models
 
-Fitting experimental data to an ODE model is a deceptively difficult task, especially in the systems biology context. The process itself boils down to finding parameter values that best explain your data, but this is complicated by both **parameter identifiability** and **data sparsity** (a latter being ubiquitous in systems biology). Here we’ll explore how both phenomena can impact parameter fitting results.
+Fitting experimental data to an ODE model is a deceptively difficult task, especially in the systems biology context. The process itself boils down to finding parameter values that best explain your data, but this is complicated by both **parameter identifiability** and **data sparsity** (the latter being ubiquitous in systems biology). Here, we’ll explore how both phenomena can impact parameter fitting results.
 
 ## Conventional Parameter Optimization
 
 ### Observe a System and Gather Data
 
-To illustrate a typical procedure for finding parameters to an ODE model, consider the system below where a green fluorescent protein (GFP) mRNA is inserted into a cell. The mRNA is translated by the ribosome in the cell to generate the light emitting protein.
+To illustrate a typical procedure for finding parameters in an ODE model, consider the system below where a green fluorescent protein (GFP) mRNA is inserted into a cell. The mRNA is translated by the ribosome in the cell to generate the light emitting protein.
 
 <img src=".\Figure_GFP.png" alt="sc" style="zoom:48%;" />
 
@@ -41,7 +41,7 @@ To illustrate a typical procedure for finding parameters to an ODE model, consid
 
 
 
-Here we see the light intensity increases and then slowly tapers off, perhaps due to the cell degrading the mRNA over time. 
+Here we see the light intensity increases and then slowly tapers off, perhaps due to the cell degrading mRNA over time. 
 
 ### Develop a Model to describe Observations
 
@@ -55,8 +55,8 @@ $$
 subject to the following initial conditions:
 
 $$
-G(t=0) = 0\\
-m(t=0) = m_0
+G(0) = 0\\
+m(0) = m_0
 $$
 
 The model above consists of four unknown parameters $[k,\beta,\tau,m_0]$ with $m_0$ being the initial amount of GFP mRNA that entered the cell. Because this is such a simplistic model, we can derive an analytical solution to the system of ODEs.
