@@ -25,7 +25,7 @@ markup: mmark
 
 # Parameter Identifiability in ODE Models
 
-Fitting experimental data to an ODE model is a deceptively difficult task, especially in the systems biology context. The process itself boils down to finding parameter values that best explain your data, but this is complicated by both *parameter identifiability* and *data sparsity* (a latter being ubiquitous in systems biology). Here we’ll explore how both phenomena can impact parameter fitting results.
+Fitting experimental data to an ODE model is a deceptively difficult task, especially in the systems biology context. The process itself boils down to finding parameter values that best explain your data, but this is complicated by both **parameter identifiability** and **data sparsity** (a latter being ubiquitous in systems biology). Here we’ll explore how both phenomena can impact parameter fitting results.
 
 ## Conventional Parameter Optimization
 
