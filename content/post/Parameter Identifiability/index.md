@@ -1,6 +1,6 @@
 ---
 title: 'Problems in ODE Parameter Fitting'
-subtitle: 'Parameter Identifiabilityg'
+subtitle: 'Parameter Identifiability'
 summary: Taking a look into why parameter fitting is so difficult
 authors:
 - admin
@@ -9,7 +9,7 @@ tags:
 categories:
 - Julia
 date: "2019-09-029T00:00:00Z"
-lastmod: "2019-09-029T00:00:00Z"
+lastmod: "2019-09-030T00:00:00Z"
 featured: true
 draft: false
 
@@ -31,7 +31,7 @@ Fitting experimental data to an ODE model is a deceptively difficult task, espec
 
 ### Observe a System and Gather Data
 
-To illustrate a typical procedure for finding parameters in an ODE model, consider the system below where a green fluorescent protein (GFP) mRNA is inserted into a cell. The mRNA is translated by the ribosome in the cell to generate the light emitting protein.
+To illustrate a typical procedure for finding parameters in an ODE model, consider the system below where green fluorescent protein (GFP) mRNA is inserted into a cell. The mRNA is translated by the ribosome in the cell to generate the light emitting protein.
 
 <img src=".\Figure_GFP.png" alt="sc" style="zoom:48%;" />
 
@@ -59,11 +59,11 @@ G(0) = 0\\
 m(0) = m_0
 $$
 
-The model above consists of four unknown parameters $[k,\beta,\tau,m_0]$ with $m_0$ being the initial amount of GFP mRNA that entered the cell. Because this is such a simplistic model, we can derive an analytical solution to the system of ODEs.
+The model above consists of four unknown parameters $[k,\beta,\tau,m_0]$ with $m_0$ being the initial amount of GFP mRNA that entered the cell. Because this is such a simplistic model, we can derive an analytical solution to the system of ODEs:
 
 $$
 m(t) = m_0 e^{-\tau t}\\
-G(t) = \frac{k \cdot m_0}{\beta-\tau} \left( e^{-\tau t} - e^{-\beta t} \right)
+G(t) = \frac{k \cdot m_0}{\beta-\tau} \left( e^{-\tau t} - e^{-\beta t} \right).
 $$
 
 There is an important note to make here about **parameter identifiability**. We only have a measurement for $G(t)$ which means $m_0$ and $k$ cannot be uniquely determined, but there product ($m_0 \cdot k$) can be. This is a common occurrence in determining ODE parameter values and is difficult to determine without the analytical solution.
@@ -125,8 +125,8 @@ Using Julia, we can code the ODE model we can run an optimization routine to sol
 	result = optimize(cost_function, initialGuess) 
 #Plot the best parameters found
 	probOpt = remake(prob,p=result.minimizer)
-	sol = solve(probOpt,Tsit5())
-	plot!(sol,labels=:Optimized,linestyle = :dash)
+	solOpt = solve(probOpt,Tsit5())
+	plot!(solOpt,labels=:Optimized,linestyle = :dash)
 ```
 
 ![svg](Figure_GFP_fit.svg)
