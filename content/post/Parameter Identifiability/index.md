@@ -116,7 +116,7 @@ Using Julia, we can code the ODE model we can run an optimization routine to sol
 #Cost function
 	dataTime = [d[1] for d in dataset] #Collect the time points
 	dataValues = [d[2] for d in dataset] #Collect the GFP values
-#The cost function needs a few inputs including the ODE probplem, ODE solver,
+#The cost function needs a few inputs including the ODE problem, ODE solver,
 #and L2 error (i.e. sum of squared error)
 	cost_function = build_loss_objective(prob,Tsit5(),
                   L2Loss(dataTime,dataValues), maxiters=10000,verbose=false)
@@ -142,4 +142,4 @@ Because the noise added to the data was small, the optimizer was able to get wit
 
 As expected, the optimized values do not match the true values despite the good fit. The product ($m_0 \cdot k$) was preserved at a value of 10 and it even looks like the $\beta$ and $\tau$ parameters are non-identifiable as their values are swapped.
 
-This rather simplistic ODE optimization problem demonstrates how much information can be lost when trying to retrieve parameter values and shows how **finding the one best parameter can be an ill-posed problem**. In upcoming posts will investigate techniques for addressing parameter identifiability.
+This rather simplistic ODE optimization problem demonstrates how much information can be lost when trying to retrieve parameter values and shows how **finding the one best parameter can be an ill-posed problem**. In upcoming posts we'll investigate techniques for addressing parameter identifiability.
