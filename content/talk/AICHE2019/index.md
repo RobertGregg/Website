@@ -1,4 +1,3 @@
-```
 ---
 title: Example Talk
 event: Academic Theme Conference
@@ -49,7 +48,7 @@ url_video: ""
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+slides: PresentionAICHE2019
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -74,4 +73,3 @@ Slides can be added in a few ways:
 - **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
 
 Further talk details can easily be added to this page using *Markdown* and $\rm \LaTeX$ math code.
-```
