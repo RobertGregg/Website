@@ -1,14 +1,14 @@
 ---
-title: Example Talk
-event: Academic Theme Conference
-event_url: https://example.org
+title: Quantifying the Impact of Cellular Heterogeneity on cGAS Pathway Regulation   using Multiscale Agent-Based Modeling
+event: AICHE
+event_url: https://www.aiche.org/conferences/aiche-annual-meeting/2019
 
-location: Source Themes HQ
+location: Hyatt Regency
 address:
-  street: 450 Serra Mall
-  city: Stanford
-  region: CA
-  postcode: '94305'
+  street: 9801 International Dr
+  city: Orlando
+  region: FL
+  postcode: '32819'
   country: United States
 
 summary: An example talk using Academic's Markdown slides feature.
@@ -36,11 +36,11 @@ image:
 links:
 - icon: twitter
   icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
+  name: @RobertWGregg
+  url: https://twitter.com/RobertWGregg
 url_code: ""
 url_pdf: ""
-url_slides: ""
+url_slides: "files/PresentionAICHE2019.pdf"
 url_video: ""
 
 # Markdown Slides (optional).
@@ -48,7 +48,7 @@ url_video: ""
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: PresentionAICHE2019
+slides: ""
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
