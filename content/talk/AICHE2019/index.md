@@ -1,5 +1,5 @@
 ---
-title: Quantifying the Impact of Cellular Heterogeneity on cGAS Pathway Regulation   using Multiscale Agent-Based Modeling
+title: Quantifying the Impact of Cellular Heterogeneity on cGAS Pathway Regulation using Multiscale Agent-Based Modeling
 event: AICHE
 event_url: https://www.aiche.org/conferences/aiche-annual-meeting/2019
 
@@ -8,7 +8,7 @@ address:
   street: 9801 International Dr
   city: Orlando
   region: FL
-  postcode: '32819'
+  postcode:32819
   country: United States
 
 summary: An example talk using Academic's Markdown slides feature.
@@ -40,7 +40,7 @@ links:
   url: https://twitter.com/RobertWGregg
 url_code: ""
 url_pdf: ""
-url_slides: "files/PresentionAICHE2019.pdf"
+url_slides: ""
 url_video: ""
 
 # Markdown Slides (optional).
