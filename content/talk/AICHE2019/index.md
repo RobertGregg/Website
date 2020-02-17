@@ -12,16 +12,19 @@ address:
   country: United States
 
 summary: An example talk using Academic's Markdown slides feature.
-abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam."
+abstract: "Agent-based modeling is an extremely general computational technique that hinges on the idea of creating individual entities—or agents—containing rule sets that define how these agents interact with each other and the environment. In the case of systems immunology, these agents are defined as biological cells, and the rule sets provided dictate how cells coordinate immunological responses. The rules provided to a cellular agent can be simple, such as basic conditional logic, or complicated, such as using ordinary differential equations (ODEs) to track intracellular protein concentrations. The advantage of framing immunological responses into an agent-based model is that  it allows us to answer questions about population level behaviors that emerge from the interactions of single cells [1]. Recently developed experimental techniques like single cell RNA-seq [2] and high-resolution fluorescence microscopy [3] have shown that cell populations are heterogenous and respond differently to identical stimuli. This distribution of behavior is generally attributed to cells being at different points in cell cycle, having variable internal protein and mRNA concentrations, and depending on stochastic noise in gene expression [4]. Agent-based models can replicate these cellular states and simulate heterogeneous cell populations, improving over traditional ODE models that predict average cell responses over the entire population.
+Using this agent-based modeling paradigm, we investigated the impact cell heterogeneity had on the cGAS pathway. The cGAS pathway is a signaling network responsible for the detection of pathogenic DNA [5]. Pathogens such as herpes simplex virus (HSV) [6] and mycobacterium tuberculosis (MTB) [7] insert their DNA into host cells which is recognized by the titular protein cGAS and induces the production of type I interferon. This cytokine leaves the infected cell, diffuses to neighboring cells, and binds onto cell receptors to activate downstream signaling pathways. Neighboring cells begin upregulating interferon stimulated genes (ISGs) that interfere with pathogenic proteins making them resistant to infection [8]. To recapitulate this behavior in an agent-based model, we introduced a rule set that categorized cells into four distinct states: healthy, infected, resistant, and dead. A cell population containing 40,000 agents was initially infected with an MOI of 10-3 using a Poisson distribution model. Cells transitioned from a healthy to an infected state depending on their proximity to infected agents. More infected neighbors increase the probability of becoming infected, thus allowing the infection to spread radially outward from the point of initiation. Infected cells produce interferon in accordance with our previously published ODE model of the cGAS pathway [9]. Healthy cells transition into resistant cells if they receive a sufficient interferon response produced by infected cells. Finally, cells enter a dead state after a set amount of time after infection, and the agent is removed from the simulation upon entering this state.  
+Here, we use this model to determine what advantages or disadvantages exist for having either highly diverse cell populations or homogeneous populations. We show that there exists an optimum level of cell-to-cell variability (specifically, variation in the initial concentrations of the signaling proteins) in which cGAS-induced interferon signaling is strongly responsive, but not prone to aberrant levels of interferon. Such a state would be associated with either chronic inflammation (high levels of interferon) or rampant infection (low levels of interferon). Finally, we discuss future additions to the model, including how immune cell trafficking can be incorporated to capture higher order behavior of the immune response.
+"
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2030-06-01T13:00:00Z"
-date_end: "2030-06-01T15:00:00Z"
+date: "2019-11-12T08:00:00Z"
+date_end: "2019-11-12T08:18:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: ""
 
 authors: []
 tags: []
@@ -57,15 +60,3 @@ projects:
 # Enable math on this page?
 math: true
 ---
-
-{{% alert note %}}
-Click on the **Slides** button above to view the built-in slides feature.
-{{% /alert %}}
-
-Slides can be added in a few ways:
-
-- **Create** slides using Academic's [*Slides*](https://sourcethemes.com/academic/docs/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
-
-Further talk details can easily be added to this page using *Markdown* and $\rm \LaTeX$ math code.
