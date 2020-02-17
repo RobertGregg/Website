@@ -36,7 +36,7 @@ image:
 links:
 - icon: twitter
   icon_pack: fab
-  name: @RobertWGregg
+  name: Follow
   url: https://twitter.com/RobertWGregg
 url_code: ""
 url_pdf: ""
