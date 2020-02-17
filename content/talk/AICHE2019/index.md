@@ -8,7 +8,7 @@ address:
   street: 9801 International Dr
   city: Orlando
   region: FL
-  postcode:32819
+  postcode: '32819'
   country: United States
 
 summary: An example talk using Academic's Markdown slides feature.
