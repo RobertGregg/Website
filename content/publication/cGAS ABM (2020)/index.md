@@ -1,6 +1,6 @@
 +++
-title = "Spatial and temporal evolution of lung granulomas in a cynomolgus macaque model of Mycobacterium tuberculosis infection"
-date = 2018-09-01T00:00:00
+title = "Agent-Based Modeling Reveals Benefits of Heterogeneous and Stochastic Cell Populations during cGAS-Mediated IFNβ Production"
+date = 2020-11-16T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Gregg, Robert W.", "Maiello, Pauline", "Borish, H. Jacob", "Coleman, M. Teresa", "Reed, Douglas S.", "White, Alexander G.", "Flynn, JoAnne L.", "Lin, Philana Ling"]
@@ -23,15 +23,7 @@ publication = "*Bioinformatics*"
 publication_short = ""
 
 # Abstract.
-abstract = "Motivation
-
-The cGAS pathway is a component of the innate immune system responsible for the detection of pathogenic DNA and upregulation of interferon beta (IFNβ). Experimental evidence shows that IFNβ signaling occurs in highly heterogeneous cells and is stochastic in nature; however, the benefits of these attributes remain unclear. To investigate how stochasticity and heterogeneity affect IFNβ production, an agent-based model is developed to simulate both DNA transfection and viral infection.
-Results
-
-We show that heterogeneity can enhance IFNβ responses during infection. Furthermore, by varying the degree of IFNβ stochasticity, we find that only a percentage of cells (20-30%) need to respond during infection. Going beyond this range provides no additional protection against cell death or reduction of viral load. Overall, these simulations suggest that heterogeneity and stochasticity are important for moderating immune potency while minimizing cell death during infection.
-Availability
-
-Model repository is available at: https://github.com/ImmuSystems-Lab/AgentBasedModel-cGASPathway"
+abstract = "**Motivation:** The cGAS pathway is a component of the innate immune system responsible for the detection of pathogenic DNA and upregulation of interferon beta (IFNβ). Experimental evidence shows that IFNβ signaling occurs in highly heterogeneous cells and is stochastic in nature; however, the benefits of these attributes remain unclear. To investigate how stochasticity and heterogeneity affect IFNβ production, an agent-based model is developed to simulate both DNA transfection and viral infection. **Results:** We show that heterogeneity can enhance IFNβ responses during infection. Furthermore, by varying the degree of IFNβ stochasticity, we find that only a percentage of cells (20-30%) need to respond during infection. Going beyond this range provides no additional protection against cell death or reduction of viral load. Overall, these simulations suggest that heterogeneity and stochasticity are important for moderating immune potency while minimizing cell death during infection.**Availability:** Model repository is available at: https://github.com/ImmuSystems-Lab/AgentBasedModel-cGASPathway"
 
 # Summary. An optional shortened abstract.
 summary = "We developed and agent based model to determine why only a percentage of cells produce an interferon response to viral infection."
