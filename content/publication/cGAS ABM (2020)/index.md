@@ -3,7 +3,7 @@ title = "Agent-Based Modeling Reveals Benefits of Heterogeneous and Stochastic C
 date = 2020-11-16T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = [ "Robert W Gregg", "Fathima Shabnam", "Jason E Shoemaker]"
+authors = [ "Robert W Gregg", "Fathima Shabnam", "Jason E Shoemaker"]
 
 # Publication type.
 # Legend:
