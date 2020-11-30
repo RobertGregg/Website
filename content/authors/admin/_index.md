@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD Candidate
+role: Postdoctoral Researcher
 
 # Organizations/Affiliations
 organizations:
@@ -27,9 +27,9 @@ interests:
 
 education:
   courses:
-  - course: PhD in Chemical Engineering, 2015-Present
+  - course: PhD in Chemical Engineering, 2015-2020
     institution: University of Pittsburgh
-    year:
+    year: 2020
   - course: BS in Chemical Engineering
     institution: University of Rochester
     year: 2015
@@ -66,5 +66,8 @@ user_groups:
 - Researchers
 - Visitors
 ---
-I'm a 4<sup>th</sup> year graduate student researcher in Chemical Engineering working under Dr. Jason Shoemaker in the [Immunosystems Lab](http://shoemakerlab.pitt.edu/). My research is focused on building multiscale mathematical models to understand how the innate immune system responds to disease. I’ve constructed models that investigate granuloma formation in tuberculosis, DNA detection in the cGAS pathway, and metabolic shifting during sepsis. I’ve always had a passion for teaching and mentoring at every skill level, from tutoring inner-city students in Rochester NY and performing chemistry “magic” shows for elementary school students, to leading my own calculus and differential equation courses for students entering college.
+I'm a postdoctoral researcher working in the [Benos Lab](https://www.csb.pitt.edu/Faculty/benos/). My current research focuses on combining causal inference algorithms with supervised machine learning techniques to investigate early COPD progression. The goal is to differentiate people whose disease will rapidly advance from those where the disease is maintained. 
+
+
+My PhD research was focused on building multiscale mathematical models to understand how the innate immune system responds to disease. I have constructed models that investigated granuloma formation in tuberculosis, DNA detection in the cGAS pathway, and metabolic shifting during sepsis. I’ve always had a passion for teaching and mentoring at every skill level, from tutoring inner-city students in Rochester NY and performing chemistry “magic” shows for elementary school students, to leading my own calculus and differential equation courses for students entering college.
 
