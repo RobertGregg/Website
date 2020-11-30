@@ -27,7 +27,7 @@ interests:
 
 education:
   courses:
-  - course: PhD in Chemical Engineering, 2015-2020
+  - course: PhD in Chemical Engineering
     institution: University of Pittsburgh
     year: 2020
   - course: BS in Chemical Engineering
