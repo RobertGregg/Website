@@ -37,7 +37,7 @@ $$
 \begin{aligned}{\frac {dx}{dt}}&=\alpha x-\beta xy\\[6pt]{\frac {dy}{dt}}&=\delta xy-\gamma y\end{aligned}
 $$
 
-The variable $x$ tracks the number of prey which increases by breeding through $\alpha$ and decreases when consumed by a predator through $\beta$. Likewise, the variable $y$ increases as prey is consumed and decreases as predators become overpopulated. We can simulate a discretized version system using `DiffEqJump.jl` and `Cataylst.jl`, packages that are a part of the [SciML](https://sciml.ai/) ecosystem.
+The variable $x$ tracks the number of prey which increases by breeding through $\alpha$ and decreases when consumed by a predator through $\beta$. Likewise, the variable $y$ increases as prey is consumed and decreases as predators become overpopulated. We can simulate a discretized version of this system using the `DiffEqJump.jl` and `Cataylst.jl`, packages that are a part of the [SciML](https://sciml.ai/) ecosystem.
 
 ```julia
 using DiffEqJump, Catalyst, Plots
@@ -73,7 +73,7 @@ To extend this model and include location information for prey and predators, I 
 
 - A grid or network to allow the animals to roam
 - Hopping rates, which tells the solver how easily an animal can move between locations
-- A mass Action Jump object to code the reactions from the Lotka–Volterra System
+- A mass action jump object to code the reactions from the Lotka–Volterra System
 
 Putting everything together gives:
 
