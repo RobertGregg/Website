@@ -65,7 +65,7 @@ plot(sol, framestyle=:box, title="Discrete Lotka-Volterra Simulation")
 
 ![svg](LV_sim.svg)
 
-Here we see the usual oscillations that characterize these equations. With few predators, the prey population increases, which in turn provides more food for predators. As predators hunt, the prey population is decreases, making less food for predators causing their population decrease and the cycle repeats. Note, however, there is noise in the simulation that causes fluctuations in the peaks of each populations. This may be a more realistic model especially when the populations are low (a fox might not be able to find the few remaining rabbits). Population levels are also discrete so you can't have less than one animal alive. 
+Here we see the usual oscillations that characterize these equations. With few predators, the prey population increases, which in turn provides more food for predators. As predators hunt, the prey population is decreases, making less food for predators causing their population decrease and the cycle repeats. Note, however, there is noise in the simulation that causes fluctuations in the peaks of each populations. This may be a more realistic model especially when the populations are low (a fox might not be able to find the few remaining rabbits). Population levels are also discrete so you can't have less than one animal alive. This is an interesting distinction from the continuous version of this model. If the prey population goes to zero, the oscillations will stop and all the predators will also disappear. 
 
 ## 2D Discrete Lotka–Volterra System
 
@@ -139,7 +139,7 @@ $$
 \end{bmatrix}
 $$
 
-The second row (for example) corresponds to the reaction: `x + y --> y`. Both columns have a one because both x and y are reactants. This needs to be converted into a vector of `Pairs` where first number corresponds to the species and the second number to the value in the matrix. For the matrix above we would get:
+The second row (for example) corresponds to the reaction: `x + y --> y`. Both columns have a one because both x and y are reactants. This needs to be converted into a vector of `Pairs` where the first number corresponds to the species and the second number to the value in the matrix. For the matrix above we would get:
 
 ```julia
 4-element Vector{Vector{Pair{Int64, Int64}}}:
