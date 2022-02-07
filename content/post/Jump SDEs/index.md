@@ -8,8 +8,8 @@ tags:
 - Academic
 categories:
 - Julia
-date: "2022-01-17T00:00:00Z"
-lastmod: "2022-01-17T00:00:00Z"
+date: "2022-02-05T00:00:00Z"
+lastmod: "2022-02-05T00:00:00Z"
 featured: true
 draft: false
 
@@ -125,7 +125,7 @@ alg = DirectCRDirect() #could use NSM()
 jumpProb = JumpProblem(prob, alg, massActionJumps, hopping_constants=hopConstants, spatial_system = grid, save_positions=(false, false))
 
 #Solve the JumpProblem
-sol = solve(jumpProb, SSAStepper(), saveat=0.01)
+sol = solve(jumpProb, SSAStepper(), saveat=0.1)
 ```
 
 The most confusing part is probably the generation of the mass action jump and is best explained through example. The reactant stoichiometry matrix records which species are reactants for every reaction. Here we have 4 reactions and 2 species, meaning `substoichmat(LV_model)` will give the following 4×2 matrix:
