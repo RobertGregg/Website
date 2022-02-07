@@ -184,4 +184,4 @@ Some interesting questions I still have:
 - Best way to handle boundary conditions? 
 - Could you use the hopping matrix to simulate membranes or other barriers to diffusion?
 
-If you made this far, thank for reading 😄!
+If you made this far, thanks for reading 😄!
