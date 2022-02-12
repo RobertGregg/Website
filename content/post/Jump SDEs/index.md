@@ -183,5 +183,3 @@ Some interesting questions I still have:
 - Could you use the hopping matrix to simulate membranes or other barriers to diffusion?
 
 If you made this far, thanks for reading 😄!
-
-![Link]("jumpSDE.jl") to download blog code.
