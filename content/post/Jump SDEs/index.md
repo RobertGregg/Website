@@ -184,4 +184,4 @@ Some interesting questions I still have:
 
 If you made this far, thanks for reading 😄!
 
-[Link]("jumpSDE.jl") to download blog code.
+![Link]("jumpSDE.jl") to download blog code.
