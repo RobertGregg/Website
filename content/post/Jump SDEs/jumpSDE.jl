@@ -35,8 +35,8 @@ tspan = (0.0,20.0)
 hopConstants = ones(numberOfSpecies, numberOfNodes) #all set to one for now
 
 #Create a mass action jump object
-reactantStoich = [filter(x-> 0 ∉ x, 1:numberOfSpecies .=> row)  for row in eachrow(substoichmat(LV_model))]
-netStoich = [filter(x-> 0 ∉ x , 1:numberOfSpecies .=> row)  for row in eachrow(netstoichmat(LV_model))]
+reactantStoich = [filter(x-> 0 ∉ x, 1:numberOfSpecies .=> col)  for col in eachcol(substoichmat(LV_model))]
+netStoich = [filter(x-> 0 ∉ x , 1:numberOfSpecies .=> col)  for col in eachcol(netstoichmat(LV_model))]
 massActionJumps = MassActionJump(reactantStoich, netStoich; param_idxs=1:numparams(LV_model))
 
 #Generate the JumpProblem

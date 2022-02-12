@@ -115,8 +115,8 @@ tspan = (0.0,20.0)
 hopConstants = ones(numberOfSpecies, numberOfNodes) #all set to one for now
 
 #Create a mass action jump object
-reactantStoich = [filter(x-> 0 ∉ x, 1:numberOfSpecies .=> row)  for row in eachrow(substoichmat(LV_model))]
-netStoich = [filter(x-> 0 ∉ x , 1:numberOfSpecies .=> row)  for row in eachrow(netstoichmat(LV_model))]
+reactantStoich = [filter(x-> 0 ∉ x, 1:numberOfSpecies .=> col)  for col in eachcol(substoichmat(LV_model))]
+netStoich = [filter(x-> 0 ∉ x , 1:numberOfSpecies .=> col)  for col in eachcol(netstoichmat(LV_model))]
 massActionJumps = MassActionJump(reactantStoich, netStoich; param_idxs=1:numparams(LV_model))
 
 #Generate the JumpProblem
@@ -128,18 +128,16 @@ jumpProb = JumpProblem(prob, alg, massActionJumps, hopping_constants=hopConstant
 sol = solve(jumpProb, SSAStepper(), saveat=0.1)
 ```
 
-The most confusing part is probably the generation of the mass action jump and is best explained through example. The reactant stoichiometry matrix records which species are reactants for every reaction. Here we have 4 reactions and 2 species, meaning `substoichmat(LV_model)` will give the following 4×2 matrix:
+The most confusing part is probably the generation of the mass action jump and is best explained through example. The reactant stoichiometry matrix records which species are reactants for every reaction. Here we have 2 species and 4 reactions, meaning `substoichmat(LV_model)` will give the following 2×4 matrix:
 
 $$
 \begin{bmatrix}
-1 & 0\\
-1 & 1\\
-1 & 1\\
-0 & 1\\
+1 & 1 & 1 & 0 \\
+0 & 1 & 1 & 1 \\
 \end{bmatrix}
 $$
 
-The second row (for example) corresponds to the reaction: `x + y --> y`. Both columns have a one because both x and y are reactants. This needs to be converted into a vector of `Pairs` where the first number corresponds to the species and the second number to the value in the matrix. For the matrix above we would get:
+The second column (for example) corresponds to the reaction: `x + y --> y`. Both rows have a one because both x and y are reactants. This needs to be converted into a vector of `Pairs` where the first number corresponds to the species and the second number to the value in the matrix. For the matrix above we would get:
 
 ```julia
 4-element Vector{Vector{Pair{Int64, Int64}}}:
@@ -185,3 +183,5 @@ Some interesting questions I still have:
 - Could you use the hopping matrix to simulate membranes or other barriers to diffusion?
 
 If you made this far, thanks for reading 😄!
+
+[Link]("jumpSDE.jl") to download blog code.
