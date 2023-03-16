@@ -26,3 +26,5 @@ markup: mmark
 In this blog post, we'll work toward creating a model that simulates cellular division. 
 
 ![gif](BringingODEsToLife.gif)
+
+This is how many cells are produced over time.
